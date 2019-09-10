@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import {Route} from 'react-router-dom';
-import {Home, About} from 'pages';
+import {Home, About, Main} from 'pages';
 
 class App extends Component {
     
@@ -9,6 +9,8 @@ class App extends Component {
             <div>
                 <Route exact path="/" component={Home}></Route>
                 <Route exact path="/about" component={About}></Route>
+                <Route exact path="/main" component={Main}></Route>
+
             </div>
         );
 
